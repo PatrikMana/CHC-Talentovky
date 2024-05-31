@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background: black;
+}
+
+div {
+    display: flex;
+    flex-direction: column; /* Zarovnání prvků pod sebe */
+}
+
+.nadpis {
+    color: rgb(88, 104, 173);
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Roboto Mono';
+    text-align: center;
+}
+
+::placeholder {
+    color: black;
+    font-size: 14px;
+    font-family: 'Roboto Mono';
+    font-weight: 600;
+}
+
+input {
+    height: 40px;
+    width: 400px;
+    border: none;
+    outline: none;
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: rgb(88, 104, 173);
+    margin: 0 5px;
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    border: none;
+    outline: none;
+    font-family: 'Roboto Mono';
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: rgb(88, 104, 173);
+    margin: 5px 0px 5px 125px;
+    cursor: pointer;
+}
+
+#výsledek {
+    font-size: 24px;
+    margin-left: 5px;
+    padding: 16px;
+    color: black;
+    background: rgb(88, 104, 173);
+    border-radius: 10px;
+    text-align: center;
+}

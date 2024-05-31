@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: black;
+}
+
+.kalkulačka {
+    display: flex;
+    flex-direction: column; /* Zarovnání prvků pod sebe */
+}
+
+.nadpis {
+    font-size: 35px;
+    margin-left: 10px;
+    color: rgb(238, 189, 98);
+}
+
+input {
+    height: 40px; 
+    width: 400px;
+    border: none;
+    outline: none;
+    color: gray;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    background: rgb(238, 189, 98);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+
+button {
+    height: 60px;
+    padding: 10px 20px;
+    border: none;
+    color: grey;
+    font-size: 20px;
+    border-radius: 10px;
+    background: rgb(238, 189, 98);
+    margin: 10px;
+    cursor: pointer;
+}
+
+#výsledek {
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 15px;
+    color: gray;
+    background: rgb(238, 189, 98);
+    border-radius: 10px;
+    text-align: center;
+}

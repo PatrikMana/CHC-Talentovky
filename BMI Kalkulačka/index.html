@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.ico">
+    <title>BMI Kalkulačka</title>
+</head>
+<body>
+  <div class="kalkulačka">
+      <h2 class="nadpis">BMI Kalkulačka</h2>
+      <input id="height" type="number" placeholder="Výška (v cm)">
+      <input id="weight" type="number" placeholder="Váha (v kg)">
+      <button onclick="calculate()">Vypočítat</button>
+      <h2 id="výsledek">Váš výsledek se zobrazí zde.</h2>
+  </div>
+  <script src="../eel.js"></script>  <!-- připojení souboru pro komunikaci s Python kódem -->
+  <script>
+    result_text = document.getElementById("výsledek");  // proměnná pro prvek s ID "výsledek" (místo pro výsledek)
+    height = document.getElementById("height");  // proměnná pro prvek s ID "height" (vstupní pole pro výšku)
+    weight = document.getElementById("weight");  // proměnná pro prvek s ID "weight" (vstupní pole pro hmotnost)
+    
+    // funkce pro výpočet BMI po kliknutí na tlačítko
+    function calculate() {
+        eel.bmi_calculator(height.value, weight.value)(result);  // volání Python funkce s hodnotami z vstupních polí
+    }
+    
+    // funkce pro zobrazení výsledku na stránce
+    function result(result) {
+        result_text.innerHTML = result;
+    }
+  </script>
+</body>
+</html>

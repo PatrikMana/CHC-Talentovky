@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit';
+}
+
+ul {
+    background-color: #111211;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+ul a {
+    font-size: 20px;
+    display: inline-block;
+    color: lightgray;
+    margin: auto;
+    text-decoration: none;
+}
+
+ul a:hover {
+    color: white;
+    transition: all 0,7s ease;
+}
+
+body {
+    background-image: url(assets/pozadí.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    background-color: gray;
+    background-blend-mode: multiply;
+    padding: auto;
+    text-align: center;
+}
+
+h1 {
+    margin: 155px 15px 150px 15px;
+}
+
+.Nadpis {
+    font-size: 50px;
+    background-color: white;
+    background-color: rgba(255, 255, 255, .9);
+    margin: 0px 775px 0px ;
+    padding: 15px;
+    box-shadow: 0 5px 15px;
+    border-radius: 6px;
+}
+
+.Logo img {
+    width:  14cm;
+    border-radius: 6px;
+    
+}
+
+.info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.řeči {
+    background-color: rgba(255, 255, 255, .9);
+    margin: 150px 65px 7px;
+    padding: 30px;
+    box-shadow: 0 5px 15px;
+    border-radius: 6px;
+}
+
+.řeči h2 {
+    font-size: 35px;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.řeči p {
+    font-size: 30px;
+    color: black;
+}
+
+.řeči_kontakt {
+    text-align: left;
+    background-color: rgba(255, 255, 255, .9);
+    margin: 150px 650px 7px 650px;
+    padding: 30px;
+    box-shadow: 0 5px 15px;
+    border-radius: 6px;
+    font-size: 30px;
+}
+
+.fotky img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    padding: 30px;
+    border-radius: 40px; 
+}
+
+.fotky {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: 0 5px 15px;
+    margin: 0px 65px 15px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.výtvor {
+    background-color: #111211;
+    color: white;
+    height: 55px;
+    padding: 20px;
+    text-align: right;
+    margin-top: 30px;
+}
